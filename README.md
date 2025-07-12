@@ -1,7 +1,6 @@
 # claude-code-setup.sh
 
-Easy way to setup Claude Code integration and then invite **`@claude`** in the issue
-comments to do the coding.
+An easy way to set up Claude Code integration and then invite **`@claude`** in issue comments to do the coding.
 
 ## Setup
 
@@ -13,6 +12,9 @@ comments to do the coding.
 git clone git@github.com:haron/claude-code-setup.sh.git
 cd my-project
 ../claude-code-setup.sh/claude-code-setup.sh
+
+# or, if you feel adventurous:
+curl -L https://raw.githubusercontent.com/haron/claude-code-setup.sh/refs/heads/master/claude-code-setup.sh | bash
 ```
 
 The script will:
