@@ -31,7 +31,7 @@ jobs:
         uses: actions/checkout@v4    
       - uses: anthropics/claude-code-action@beta
         with:
-          prompt: "\${{ github.event.comment.body }}"
+          direct_prompt: "\${{ github.event.comment.body }}"
           allowed_tools: "Bash(git status),Bash(git log),Bash(git show),Bash(git blame),Bash(git reflog),Bash(git stash list),Bash(git ls-files),Bash(git branch),Bash(git tag),Bash(git diff),View,GlobTool,GrepTool,BatchTool"
           anthropic_api_key: "\${{ secrets.ANTHROPIC_API_KEY }}"
 EOF
